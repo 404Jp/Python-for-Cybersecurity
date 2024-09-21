@@ -1,0 +1,1 @@
+https://thepythoncode.com/article/force-a-device-to-disconnect-scapy

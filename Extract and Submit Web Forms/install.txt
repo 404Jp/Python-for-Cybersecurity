@@ -1,0 +1,3 @@
+pip3 install requests_html bs4
+
+https://thepythoncode.com/article/extracting-and-submitting-web-page-forms-in-python

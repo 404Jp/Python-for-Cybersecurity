@@ -1,0 +1,3 @@
+pip3 install colorama
+
+https://thepythoncode.com/article/make-port-scanner-python

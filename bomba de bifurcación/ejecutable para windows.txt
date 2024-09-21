@@ -1,0 +1,26 @@
+Convertir nuestro código en un ejecutable
+Ahora que hemos terminado con nuestros programas, es hora de convertirlo en un ejecutable. La conversión de código Python en un ejecutable mejora la portabilidad, simplifica la distribución y proporciona una forma fácil de usar, segura e independiente de ejecutar el programa sin necesidad de un intérprete de Python.
+
+Además, en un escenario del mundo real, enviar a su objetivo un archivo de Python no es lo ideal. Es posible que ni siquiera tengan un intérprete de Python, y eso haría que el programa fuera inútil. Por lo tanto, convertir nuestro programa en un ejecutable es una mejor manera de entregar malware a un objetivo. También le mostraré cómo envolver nuestro ejecutable con un icono legítimo para que nuestros objetivos estén más inclinados a hacer clic en él.
+
+Vamos a lograr esto (convirtiendo nuestro programa en un ejecutable) usando PyInstaller. PyInstaller es una herramienta que convierte scripts de Python en ejecutables independientes, lo que agiliza la distribución y permite a los usuarios ejecutar el programa sin un intérprete de Python independiente. No dude en consultar la documentación o nuestro tutorial de Pyinstaller.
+
+Antes de usar PyInstaller, tenemos que instalarlo:
+
+$ pip install pyinstaller
+
+Para convertir nuestro programa en un exe, navegue hasta el directorio en el que se encuentra su código como guardado y ejecútelo;
+
+$ pyinstaller --onefile fork_bomb.py --icon instagram.ico --name Instagram-Premium
+
+
+Este comando PyInstaller convierte nuestro fork_bomb.py de script de Python en un ejecutable independiente llamado Instagram-Premium con el icono de instagram.ico especificado. Asegúrese de que el icono y el código Python estén en el mismo directorio. Si no lo están, especifique las rutas completas. Puedes obtener el ícono de Instagram desde aquí.
+
+Después de ejecutar esto, debería obtener una nueva carpeta dist en el directorio donde se encuentra su archivo de Python. Similar a:
+
+
+Dentro de esa carpeta dist, descansa nuestra bomba de tenedor o 'instagram premium':
+
+Al usar un nombre familiar y de confianza, como "Instagram-Premium", y asociarlo con un icono que se asemeja al logotipo de Instagram, este comando de PyInstaller ilustra cómo los atacantes podrían engañar a los usuarios para que ejecuten código malicioso. Esta técnica de ingeniería social aprovecha la confianza de los usuarios en una marca conocida para animarlos a ejecutar el ejecutable. Enfatiza la importancia de un comportamiento cauteloso y de verificar la legitimidad de los archivos, especialmente cuando parecen estar asociados con entidades conocidas.
+
+Simplemente puedo decirle a mi objetivo: "Oye, echa un vistazo a este nuevo y premium Instagram para PC y dispositivos móviles. Contiene características más geniales que el normal, y está agrietado, por lo que no tienes que pagar". Cuando mi objetivo hace clic en él, se acabó el juego para ellos.

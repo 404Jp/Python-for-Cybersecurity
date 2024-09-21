@@ -1,0 +1,6 @@
+pip3 install faker scapy
+
+apt-get install aircrack-ng
+
+
+https://thepythoncode.com/article/create-fake-access-points-scapy

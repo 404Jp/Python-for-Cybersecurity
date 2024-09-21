@@ -1,0 +1,3 @@
+ pip install keyboard
+
+ configurar envio de reportes en codigo 

@@ -1,0 +1,5 @@
+pip3 install scapy
+pip3 install pywin32
+
+
+https://thepythoncode.com/article/building-arp-spoofer-using-scapy
